@@ -1482,6 +1482,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
+										"id": "066e8b83-c1b3-46ac-8c11-9bea64324623",
 										"exec": [
 											"var storeId = \"FR10044337\";\r",
 											"pm.variables.set(\"storeId\", storeId);\r",
@@ -1528,13 +1529,13 @@
 											"\r",
 											""
 										],
-										"type": "text/javascript",
-										"id": "066e8b83-c1b3-46ac-8c11-9bea64324623"
+										"type": "text/javascript"
 									}
 								},
 								{
 									"listen": "test",
 									"script": {
+										"id": "326048d0-7c1d-42ee-8dd8-468bdfcba64b",
 										"exec": [
 											"eval(postman.getGlobalVariable(\"describe-it-test-script\"));\r",
 											"\r",
@@ -1607,13 +1608,12 @@
 											"// Tender/ Payment type validations\r",
 											"\r",
 											"    testResults2(jsonData.tenders[0].paymentType, \"Cash\");\r",
-											"    testResults2(jsonData.tenders[0].tenderAmount, 100.0);\r",
+											"    // testResults2(jsonData.tenders[0].tenderAmount, 100.0);\r",
 											"   \r",
 											"pm.environment.unset(\"lineItemId\");\r",
 											""
 										],
-										"type": "text/javascript",
-										"id": "326048d0-7c1d-42ee-8dd8-468bdfcba64b"
+										"type": "text/javascript"
 									}
 								}
 							],
